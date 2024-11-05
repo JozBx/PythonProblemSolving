@@ -68,7 +68,7 @@ def word_search(board: list, word: str) -> bool:
         
         return found
     
-    # Iterate over each cell in the grid and start a DFS if the first character matches
+    # Iterate over each cell in the grid and start a search if the first character matches
     for r in range(rows):
         for c in range(cols):
             if board[r][c] == word[0] and search(r, c, 0):
